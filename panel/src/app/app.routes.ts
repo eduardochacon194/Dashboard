@@ -3,16 +3,18 @@ import { Login } from './components/login/login'; //nombre del  export class Log
 import { Menu } from './components/menu/menu'
 
 export const routes: Routes = [{
-    path:'**',
-    redirectTo:'login',
-    pathMatch:'full'
-},
-{
-    path:'login',
-    component:Login
-},
-{
     path:'',
+    redirectTo:'Login',
+    pathMatch:'full',
+    title: 'Login'
+},
+{
+    path:'Login',
+    component:Login,
+    title: 'Login'
+},
+{
+    path:'Menu',
     component:Menu,
 }
 ];
