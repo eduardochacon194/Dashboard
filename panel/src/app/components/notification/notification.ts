@@ -8,7 +8,7 @@ import { initFlowbite } from 'flowbite';
   styleUrl: './notification.css'
 })
 export class Notification {
-      ngOnInit(): void {
-      initFlowbite();
-    }
+    ngOnInit(): void {
+    initFlowbite();
+  }
 }
